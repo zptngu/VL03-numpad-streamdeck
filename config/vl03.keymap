@@ -42,7 +42,7 @@
             bindings = <
 &kp LC(NUMBER_1)  &trans  &trans  &trans
 &kp LC(NUMBER_2)  &trans  &trans
-&kp LC(NUMBER_3)  &trans  &tog 1  &trans
+&kp LC(NUMBER_3)  &trans  &to 1   &trans
             >;
         };
 
@@ -50,7 +50,7 @@
             bindings = <
 &kp LC(Z)  &trans  &trans  &trans
 &kp LC(C)  &trans  &trans
-&kp LC(V)  &trans  &tog 0  &trans
+&kp LC(V)  &trans  &to 0   &trans
             >;
         };
     };
