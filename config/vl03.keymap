@@ -19,6 +19,29 @@
         };
     };
 
+    macros {
+        tab1: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp TAB &kp NUMBER_1>;
+            label = "NEW_MACRO";
+        };
+
+        tab2: tab2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp TAB &kp NUMBER_2>;
+            label = "TAB2";
+        };
+
+        tab3: tab3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp TAB &kp NUMBER_3>;
+            label = "TAB3";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -40,9 +63,9 @@
 
         layer_0 {
             bindings = <
-&kp LC(NUMBER_1)  &trans  &trans  &trans
-&kp LC(NUMBER_2)  &trans  &trans
-&kp LC(NUMBER_3)  &trans  &to 1   &trans
+&tab1  &trans  &trans  &trans
+&tab2  &trans  &trans
+&tab3  &trans  &to 1   &trans
             >;
         };
 
