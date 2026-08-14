@@ -64,9 +64,9 @@
 
         layer_2 {
             bindings = <
-&kp LC(NUMBER_1)  &trans  &trans  &trans
-&trans            &trans  &trans
-&trans            &trans  &trans  &trans
+&kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &trans  &trans
+&trans            &trans            &trans
+&trans            &trans            &trans  &trans
             >;
         };
     };
