@@ -38,11 +38,19 @@
         //  Tap the "0" key here to unlock ZMK Studio for editing.
         // ------------------------------------------------------------------
 
-        layer_4 {
+        layer_0 {
             bindings = <
-&trans  &trans  &kp LC(NUMBER_1)  &trans
-&trans  &trans  &kp LC(NUMBER_2)
-&tog 0  &trans  &kp LC(NUMBER_3)  &trans
+&kp LC(NUMBER_1)  &trans  &trans  &trans
+&kp LC(NUMBER_2)  &trans  &trans
+&kp LC(NUMBER_3)  &trans  &tog 1  &trans
+            >;
+        };
+
+        layer_1 {
+            bindings = <
+&kp LC(Z)  &trans  &trans  &trans
+&kp LC(C)  &trans  &trans
+&kp LC(V)  &trans  &tog 0  &trans
             >;
         };
     };
