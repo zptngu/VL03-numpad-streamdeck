@@ -20,24 +20,24 @@
     };
 
     macros {
-        tab1: new_macro {
+        mp: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp NUMBER_1 &kp GRAVE>;
+            bindings = <&kp M &kp PLUS>;
             label = "NEW_MACRO";
         };
 
-        tab2: tab2 {
+        mm: tab2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp NUMBER_2 &kp GRAVE>;
+            bindings = <&kp M &kp MINUS>;
             label = "TAB2";
         };
 
-        tab3: tab3 {
+        cp: tab3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp NUMBER_3 &kp GRAVE>;
+            bindings = <&kp M &kp ASTERISK>;
             label = "TAB3";
         };
     };
@@ -63,9 +63,9 @@
 
         layer_0 {
             bindings = <
-&tab1  &trans  &trans  &trans
-&tab2  &trans  &trans
-&tab3  &trans  &to 1   &trans
+&cp  &trans  &trans  &trans
+&mm  &trans  &trans
+&mp  &trans  &to 1   &trans
             >;
         };
 
