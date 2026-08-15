@@ -23,24 +23,21 @@
         mp: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp M>, <&macro_tap>, <&kp U>;
-
+            bindings = <&kp LC(LS(M))>;
             label = "NEW_MACRO";
         };
 
         mm: tab2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp M>, <&macro_tap>, <&kp D>;
-
+            bindings = <&kp LC(LS(N))>;
             label = "TAB2";
         };
 
         cp: tab3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp C>, <&macro_tap>, <&kp S>;
-
+            bindings = <&kp LC(LS(B))>;
             label = "TAB3";
         };
     };
