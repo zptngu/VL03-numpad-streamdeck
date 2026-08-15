@@ -23,7 +23,7 @@
         mp: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp M>, <&macro_press>, <&kp U>;
+            bindings = <&macro_tap>, <&kp M>, <&macro_tap>, <&kp U>;
 
             label = "NEW_MACRO";
         };
@@ -31,7 +31,7 @@
         mm: tab2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp M>, <&macro_press>, <&kp D>;
+            bindings = <&macro_tap>, <&kp M>, <&macro_tap>, <&kp D>;
 
             label = "TAB2";
         };
@@ -39,7 +39,7 @@
         cp: tab3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp C>, <&macro_press>, <&kp S>;
+            bindings = <&macro_tap>, <&kp C>, <&macro_tap>, <&kp S>;
 
             label = "TAB3";
         };
